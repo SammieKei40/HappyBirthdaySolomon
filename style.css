@@ -277,34 +277,3 @@ header{
     width: 27px;
 }
 
-.icons img:nth-child(19){
-    animation-delay: 2.3s;
-    width: 29px;
-}
-.icons img:nth-child(20){
-    animation-delay: 7s;
-    width: 12px;
-}
-.icons img:nth-child(21){
-    animation-delay: 1.9s;
-    width: 34px;
-}
-
-.icons img:nth-child(22){
-    animation-delay: 6s;
-}
-.icons img:nth-child(23){
-    animation-delay: 5s;
-    width: 10px;
-}
-
-.icons img:nth-child(24){
-    animation-delay: 9s;
-    width: 27px;
-}
-
-.icons p:nth-child(25){
-    animation-delay: 2s;
-    width: 30px;
-}
-
