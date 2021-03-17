@@ -23,13 +23,21 @@ audio{
     background-color: black;
 }
 
-span, main{
+span{
     position: absolute;
     pointer-events: none;
     background: #fff;
     animation: animate 20s linear infinite;
 
 }
+
+main {
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    animation: animate1 20s linear infinite;
+}
+
 
 
 @keyframes animate{
@@ -54,6 +62,26 @@ span, main{
 }
 
 @media (max-width:600px){
+    @keyframes animate1{
+        0%{
+            transform: scale(0) translateY(2000px) rotate(0deg);
+            opacity: 0;
+        }
+    
+        10%{
+            opacity: 1;
+        }
+    
+        90%{
+            opacity: 1;
+        }
+    
+        100%{
+            transform: scale(0.4) translateY(2000px) rotate(360deg);
+            opacity: 1;
+        }
+    
+    }
 
     @keyframes animate{
         0%{
@@ -70,7 +98,7 @@ span, main{
         }
     
         100%{
-            transform: scale(0.4) translateY(4000px) rotate(360deg);
+            transform: scale(0.4) translateY(7000px) rotate(360deg);
             opacity: 1;
         }
     
@@ -117,14 +145,32 @@ header{
     transform-style: preserve-3d;
 }
 
+button{
+    background: #5da0e4;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-items: center;
+    cursor: pointer;
+
+   }
+
 .container .box {
     position: relative;
     width: 300px;
     height: 400px;
-    margin: 20px 0;
-    perspective: 1000px;
+    margin: 20px ;
     overflow: hidden;
-    transform-style: preserve-3d;
+   
 }
 
 .container .box .imgbx {
@@ -183,4 +229,10 @@ header{
 }
 
 
-
+.section-6{
+    color: #fff;
+}
+.section-6 a{
+    text-decoration: none;
+    color: blue;
+}

@@ -48,4 +48,31 @@ function createSquare(){
     },20000)
 }
 
-setInterval(createSquare, 150)
+setInterval(createSquare, 150);
+
+
+
+(function () {
+    var song = document.querySelector("#audio");
+    var iconHolder = document.getElementById("start");
+  
+  
+    iconHolder.addEventListener("click", function () {
+      if (!song.paused) {
+        song.pause();
+        iconHolder.innerHTML = `<i class="fa fa-play"></i> &nbsp; Play music`;
+      } else {
+        song.play();
+        iconHolder.innerHTML = `<i class="fa fa-pause"></i> &nbsp; Pause music`;
+      }
+    });
+    var mute = true;
+    document.body.addEventListener("mouseover", e => {
+      if (mute) {
+        song.play();
+        mute = false;
+      }
+    });
+    
+    
+  })();
