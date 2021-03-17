@@ -19,13 +19,18 @@ section{
     height: 100vh;
 }
 
-span{
+audio{
+    background-color: black;
+}
+
+span, main{
     position: absolute;
     pointer-events: none;
     background: #fff;
     animation: animate 20s linear infinite;
 
 }
+
 
 @keyframes animate{
     0%{
@@ -42,7 +47,7 @@ span{
     }
 
     100%{
-        transform: scale(0.9) translateY(2000px) rotate(360deg);
+        transform: scale(0.4) translateY(2000px) rotate(360deg);
         opacity: 1;
     }
 
@@ -65,7 +70,7 @@ span{
         }
     
         100%{
-            transform: scale(0.9) translateY(4000px) rotate(360deg);
+            transform: scale(0.4) translateY(4000px) rotate(360deg);
             opacity: 1;
         }
     
