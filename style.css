@@ -64,7 +64,7 @@ main {
 @media (max-width:600px){
     @keyframes animate1{
         0%{
-            transform: scale(0) translateY(2000px) rotate(0deg);
+            transform: scale(0) translateY(-50px) rotate(0deg);
             opacity: 0;
         }
     
@@ -77,7 +77,7 @@ main {
         }
     
         100%{
-            transform: scale(0.4) translateY(2000px) rotate(360deg);
+            transform: scale(0.4) translateY(7000px) rotate(360deg);
             opacity: 1;
         }
     
